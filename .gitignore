@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+target/
+*.tsbuildinfo
+
+# Tauri
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/gen/
+
+# Environment / secrets — never commit real secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+recovery-key*.txt
+
+# Local database & backups — never commit real project data
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+/data/
+/backups/
+
+# Logs
+*.log
+logs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Test/coverage
+coverage/
